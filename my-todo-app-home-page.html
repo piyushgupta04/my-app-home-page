@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster | Organize Your Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Delius&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #423a01 0%, #edead9 100%);
+            font-family: "EB Garamond", serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(45deg, #e0dac7, #edead9);
+        }
+
+        .myh1{
+            color: #3d3929;
+        }
+        .button-1{
+            color: #e0dac7;
+            background-color: #3d3929;
+        }
+        .button-1a{
+            color: #3d3929;
+            border-color: #3d3929;
+        }
+
+        .my-feature{
+            color: #3d3929;
+            background-color: #fffdf6;
+        }
+        .my-feature-box{
+            color: #3d3929;
+            background-color: #fefaef;
+            border: 2px solid #c0ba98;
+        }
+        .brown-color{
+            color: #3d3929;
+        }
+        .my-footer{
+            color: #3d3929;
+            background-color: #edead9;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900">
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 myh1">Conquer Your Day, One Task at a Time</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto myh1">Streamline your productivity with the ultimate todo list application designed to help you stay organized and focused.</p>
+            <div class="space-x-4">
+                <a href="https://my-app-frountend.onrender.com/" class="text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition button-1">
+                    Launch ToDo App
+                </a>
+                <a href="#features" class="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-blue-500 transition button-1a">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white my-feature">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose TaskMaster?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg text-center my-feature-box">
+                    <i data-feather="layout" class="w-12 h-12 mx-auto text-blue-500 mb-4 brown-color"></i>
+                    <h3 class="font-bold text-xl mb-3">Simple Interface</h3>
+                    <p>Clean, intuitive design that makes task management a breeze.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center my-feature-box">
+                    <i data-feather="check-square" class="w-12 h-12 mx-auto text-blue-500 mb-4 brown-color"></i>
+                    <h3 class="font-bold text-xl mb-3">Easy Tracking</h3>
+                    <p>Mark tasks complete, delete with a single click, and stay organized.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center my-feature-box">
+                    <i data-feather="cloud" class="w-12 h-12 mx-auto text-blue-500 mb-4 brown-color"></i>
+                    <h3 class="font-bold text-xl mb-3">Cloud Sync</h3>
+                    <p>Your tasks are saved and synced across all your devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50 my-feature">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">About TaskMaster</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-700 mb-8">
+                Todo App was created with a simple mission: to help you become more productive and organized. 
+                Our app provides a straightforward, no-nonsense approach to managing your daily tasks, 
+                allowing you to focus on what matters most.
+            </p>
+            <a href="https://my-app-frountend.onrender.com/" class=" button-1 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition">
+                Start ToDo App
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 my-footer">
+        <div class="container mx-auto px-6 text-center">
+            <p>Made with <span>❤</span> by <strong>Piyush Gupta</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
